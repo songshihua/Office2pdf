@@ -11,7 +11,7 @@ from PyQt5.QtWidgets import (QApplication,QWidget,QVBoxLayout,QHBoxLayout,QLabel
     QPushButton,QFileDialog,QLineEdit,QCheckBox,QPlainTextEdit,QProgressBar,QMessageBox)
 from converter_engine import convert,register_fonts
 
-DEFAULT_DIR=Path(r'D:\360Downloads\pdf转换')
+DEFAULT_DIR=Path.home()/'Downloads'
 
 class Worker(QThread):
     progress=pyqtSignal(str);success=pyqtSignal(dict);failure=pyqtSignal(str)
