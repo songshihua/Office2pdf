@@ -1,5 +1,0 @@
-PyQt5>=5.15,<6
-PyMuPDF>=1.26
-fonttools>=4.50
-pypdf>=6
-pyinstaller>=6.20

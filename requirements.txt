@@ -1,0 +1,5 @@
+# Tested with 64-bit CPython 3.13 on Windows.
+PyQt5==5.15.10
+PyMuPDF==1.27.2.3
+fonttools==4.55.3
+pypdf==6.21.4

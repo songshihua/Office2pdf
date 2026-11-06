@@ -1,0 +1,24 @@
+name: 功能建议
+description: 提出 PDF 转 Word、批量转换或使用体验建议
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你遇到的实际问题
+      description: 请说明使用场景以及现有工具为什么不够用。
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: 希望增加的能力
+      description: 请描述期望的操作方式、输入格式和输出效果。
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: 示例或补充信息
+      description: 仅附可以公开的样例；规划中的功能不代表已经实现。

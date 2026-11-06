@@ -1,0 +1,39 @@
+# Python and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Packaging and local executables; publish binaries in GitHub Releases.
+build/
+dist/
+release-assets/
+*.exe
+*.zip
+
+# Private inputs, converted outputs, conversion logs and backups
+*.doc
+*.docx
+*.docm
+*.pdf
+!examples/*.pdf
+*.pdf.part
+转换日志/
+.转换临时_*/
+_local/
+local-backups/
+源码/
+界面显示图.png
+
+# Local tools and credentials
+.idea/
+.vscode/
+.env
+.env.*
+Thumbs.db
+Desktop.ini
+.DS_Store

@@ -1,0 +1,18 @@
+name: Check source and documentation
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Check project files and links
+        run: python scripts/check_project.py
+      - name: Compile Python sources
+        run: python -m compileall -q src scripts
